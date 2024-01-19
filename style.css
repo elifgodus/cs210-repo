@@ -1,0 +1,533 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('./notice.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Styling */
+/* Title Styling with Transparent Background */
+h1 {
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 50% opacity */
+    color: white; /* White text for better readability */
+    padding: 20px; /* Add padding to create space inside the transparent box */
+    border-radius: 10px; /* Rounded corners for the box */
+    font-size: 50px; /* Your specified font size */
+    font-family: "Trirong", serif;
+    /* Remove margin-top and margin-bottom if you want it exactly in the center */
+}
+/* Navigation Bar Styling */
+nav {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2; /* Ensure nav is above other content */
+}
+
+/* Ensure content is not hidden behind the fixed navbar */
+body {
+    padding-top: 40px; /* Adjust this value to match the height of your navbar */
+}
+
+/* Navigation Links Styling */
+nav .dropdown {
+    float: left; /* Align your buttons to the left side of the nav bar */
+}
+
+/* Clearfix for floated elements */
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Dropdown Menu Styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.dropdown button {
+    background-color: black; /* Changed from #4CAF50 to black */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.2s;
+}
+
+.dropdown button:hover, .dropdown button:focus {
+    background-color: #333; /* Darker shade of black for hover/focus */
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.info-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 50% opacity */
+    color: white; /* White text for better readability */
+    padding: 40px; /* Add padding to create space inside the box */
+    border-radius: 20px; /* Rounded corners for the box */
+    margin-top: 30px; /* Space above the box */
+    margin-left: auto; /* Center the box horizontally */
+    margin-right: auto; /* Center the box horizontally */
+    text-align: center; /* Center the text */
+    font-size: 1em; /* Font size */
+    max-width: 65%; /* Maximum width of the box, adjust as needed */
+    font-size: 20px; /* Increase font size */
+    font-family: "Trirong", serif;
+    margin-bottom: 30px;
+}
+/* Container for the new boxes */
+.new-boxes-container {
+    max-width: 70%; /* Same as the second box */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Add space between the boxes */
+    gap: 20px; /* Space between boxes */
+    margin-bottom: 30px;
+}
+
+/* Individual box styling */
+.new-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white; /* White text */
+    padding: 20px;
+    border-radius: 20px;
+    width: 48%; /* Half width minus the gap */
+    box-sizing: border-box; /* Include padding and border in the width */
+    font-size: 20px; /* Adjust font size as necessary */
+    text-align: center; /* Center text horizontally */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-weight: bold; /* Make text bold */
+    font-family: "Trirong", serif;
+}
+
+
+/* Style for the image box */
+.image-box {
+    text-align: center; /* Center the image */
+}
+.new-boxes-container2 {
+    max-width: 70%; /* Same as the second box */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Add space between the boxes */
+    gap: 20px; /* Space between boxes */
+    margin-bottom: 30px;
+}
+
+/* Individual box styling */
+.new-box2 {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white; /* White text */
+  padding: 20px;
+  border-radius: 20px;
+  width: 48%; /* Half width minus the gap */
+  box-sizing: border-box; /* Include padding and border in the width */
+  font-size: 20px; /* Adjust font size as necessary */
+  text-align: center; /* Center text horizontally */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-weight: bold; /* Make text bold */
+  font-family: "Trirong", serif;
+}
+
+/* Style for the image box */
+.image-box2 {
+    text-align: center; /* Center the image */
+}
+.new-boxes-container3 {
+    max-width: 70%; /* Same as the second box */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Add space between the boxes */
+    gap: 20px; /* Space between boxes */
+    margin-bottom: 30px;
+}
+
+/* Individual box styling */
+.new-box3 {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white; /* White text */
+  padding: 20px;
+  border-radius: 20px;
+  width: 48%; /* Half width minus the gap */
+  box-sizing: border-box; /* Include padding and border in the width */
+  font-size: 20px; /* Adjust font size as necessary */
+  text-align: center; /* Center text horizontally */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-weight: bold; /* Make text bold */
+  font-family: "Trirong", serif;
+}
+
+/* Style for the image box */
+.image-box3 {
+    text-align: center; /* Center the image */
+}
+.new-boxes-container4 {
+    max-width: 70%; /* Same as the second box */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Add space between the boxes */
+    gap: 20px; /* Space between boxes */
+    margin-bottom: 30px;
+}
+
+/* Individual box styling */
+.new-box4 {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white; /* White text */
+  padding: 20px;
+  border-radius: 20px;
+  width: 48%; /* Half width minus the gap */
+  box-sizing: border-box; /* Include padding and border in the width */
+  font-size: 20px; /* Adjust font size as necessary */
+  text-align: center; /* Center text horizontally */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-weight: bold; /* Make text bold */
+  font-family: "Trirong", serif;
+}
+
+/* Style for the image box */
+.image-box4 {
+    text-align: center; /* Center the image */
+}
+.new-boxes-container6 {
+    max-width: 70%; /* Same as the second box */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Add space between the boxes */
+    gap: 20px; /* Space between boxes */
+    margin-bottom: 30px;
+}
+
+/* Individual box styling */
+.new-box6 {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white; /* White text */
+  padding: 20px;
+  border-radius: 20px;
+  width: 48%; /* Half width minus the gap */
+  box-sizing: border-box; /* Include padding and border in the width */
+  font-size: 20px; /* Adjust font size as necessary */
+  text-align: center; /* Center text horizontally */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-weight: bold; /* Make text bold */
+  font-family: "Trirong", serif;
+}
+.new-boxes-container6 {
+    max-width: 70%; /* Same as the second box */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Add space between the boxes */
+    gap: 20px; /* Space between boxes */
+    margin-bottom: 30px;
+}
+
+/* Individual box styling */
+.new-box7 {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white; /* White text */
+  padding: 20px;
+  border-radius: 20px;
+  width: 48%; /* Half width minus the gap */
+  box-sizing: border-box; /* Include padding and border in the width */
+  font-size: 20px; /* Adjust font size as necessary */
+  text-align: center; /* Center text horizontally */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-weight: bold; /* Make text bold */
+  font-family: "Trirong", serif;
+}
+.new-boxes-container7 {
+    max-width: 70%; /* Same as the second box */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Add space between the boxes */
+    gap: 20px; /* Space between boxes */
+    margin-bottom: 30px;
+}
+
+/* Individual box styling */
+.new-box7 {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white; /* White text */
+  padding: 20px;
+  border-radius: 20px;
+  width: 48%; /* Half width minus the gap */
+  box-sizing: border-box; /* Include padding and border in the width */
+  font-size: 20px; /* Adjust font size as necessary */
+  text-align: center; /* Center text horizontally */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-weight: bold; /* Make text bold */
+  font-family: "Trirong", serif;
+}
+/* Style for the image box */
+.image-box5 {
+    text-align: center; /* Center the image */
+}
+
+
+/* Table Styling */
+.title-boxes-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 80%; /* Adjust as needed */
+    gap: 20px;
+}
+
+/* Individual Title Box */
+.title-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    padding: 40px 40px;
+    border-radius: 10px;
+    text-align: center;
+    flex-grow: 1; /* Allows boxes to grow and fill the container evenly */
+    margin: 10px;
+    font-weight: bold; /* Make text bold */
+    font-family: "Trirong", serif;
+      font-size: 20px;
+}
+.title-boxes-container1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 80%; /* Adjust as needed */
+    gap: 20px;
+}
+
+/* Individual Title Box */
+.title-box1 {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    padding: 40px 40px;
+    border-radius: 10px;
+    text-align: center;
+    flex-grow: 1; /* Allows boxes to grow and fill the container evenly */
+    margin-left: 40px;
+    font-weight: bold; /* Make text bold */
+    font-family: "Trirong", serif;
+    font-size: 20px;
+}
+
+/* Box for the image */
+.image-box1 {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    padding: 34px; /* Minimal padding around the image */
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block; /* Makes the box only as wide as its content */
+    box-sizing: border-box;
+}
+/* Style for the image */
+.content-image {
+    max-width: 10%; /* Full width of the box */
+    max-height: 40px; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+}
+.title-boxes-container2{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 80%; /* Adjust as needed */
+    gap: 20px;
+}
+
+/* Individual Title Box */
+.title-box2 {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    padding: 40px 40px;
+    border-radius: 10px;
+    text-align: center;
+    flex-grow: 1; /* Allows boxes to grow and fill the container evenly */
+    margin-left: 40px;
+    font-weight: bold; /* Make text bold */
+    font-family: "Trirong", serif;
+    font-size: 20px;
+}
+
+/* Box for the image */
+.image-box2 {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    padding: 34px; /* Minimal padding around the image */
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block; /* Makes the box only as wide as its content */
+    box-sizing: border-box;
+}
+/* Style for the image */
+.content-image {
+    max-width: 10%; /* Full width of the box */
+    max-height: 40px; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+}
+
+.title-boxes-container3 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 80%; /* Adjust as needed */
+    gap: 20px;
+}
+
+/* Individual Title Box */
+.title-box3 {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    padding: 40px 40px;
+    border-radius: 10px;
+    text-align: center;
+    flex-grow: 1; /* Allows boxes to grow and fill the container evenly */
+    margin-left: 40px;
+    font-weight: bold; /* Make text bold */
+    font-family: "Trirong", serif;
+    font-size: 20px;
+}
+
+/* Box for the image */
+.image-box3 {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    padding: 34px; /* Minimal padding around the image */
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block; /* Makes the box only as wide as its content */
+    box-sizing: border-box;
+}
+/* Style for the image */
+.content-image {
+    max-width: 10%; /* Full width of the box */
+    max-height: 40px; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* Table Styling */
+html, body {
+    height: 100%; /* Full height */
+    margin-left: 20;
+    margin-right: 20px;/* No margin */
+    margin-top: -20px;
+    padding: 30px; /* No padding */
+    background-image: url('./pexels-expect-best-351265.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed;
+}
+
+/* Full-Page Table Styling */
+table {
+    width: 100%;
+    height: 90vh; /* 90% of the viewport height to account for any nav/header */
+    border-collapse: collapse;
+    table-layout: fixed; /* Fixed table layout */
+    margin: 5vh auto 0 auto; /* Center table on the page vertically */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+}
+
+th, td {
+    border: 4px solid #ddd;
+    padding: 3vh; /* Padding relative to viewport height */
+
+    font-size: 16px; /* Adjust font size as necessary */
+    text-align: center; /* Center text horizontally */
+    vertical-align: middle;
+    font-size: 20px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    font-family: "Trirong", serif;
+    color: white;/* Center content vertically */
+    }
+
+th {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+tr {
+    height: 10vh; /* Height of each row relative to viewport height */
+}
+
+img.artist-image {
+    max-height: 12vh; /* Maximum height of image */
+    width: auto; /* Keep aspect ratio */
+}
+
+/* Ensure body has no extra padding or margin */
+body {
+    margin: 0;
+    padding: 0;
+    /* ... other body styles ... */
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .dropdown {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .dropdown button {
+        width: 100%;
+    }
+}

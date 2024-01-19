@@ -34,7 +34,7 @@ The project is structured as follows:
 - `scripts/`: Scripts for data preprocessing and analysis.
 - `webapp/`: The code for the interactive website presenting the analysis results.
 
-## Website
+## Website and PDF REPORT
 
 A dynamic website featuring all of the data and visuals was carefully designed to encourage user involvement and investigation of the project's discoveries. The website is built using a combination of web development technologies, including:
 

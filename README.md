@@ -1,6 +1,6 @@
 # Spotify Data Analysis and Prediction
 
-MORE DETAIL ON WEBSITE AND PDF REPORT
+MORE DETAIL ON WEBSITE AND **PDF** **REPORT**
 
 
 ## Introduction
